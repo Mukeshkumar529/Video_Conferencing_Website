@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk with Friends</title>
+    <link rel="stylesheet" href="./video.css">
+ </head>
+ <body>
+    <header>
+        <h1>Video Conferencing Website</h1>
+    </header>
+
+    <div id="main_interface">
+       <div class="you_side">
+         <video id="myVideo" autoplay muted></video>
+       </div>
+       <div class="others_side">
+         <video id="otherVideo" autoplay></video>
+       </div>
+    </div>
+    <div id="videocall_control">
+      <div class="call_to_others">
+         <select name="id" id="select_person">
+            <option value="name">Vikash</option>
+            <option value="name">Nikesh</option>
+            <option value="name">Arvind</option>
+            <option value="name">Bablu</option>
+            <option value="name">Mintu</option>
+         </select>
+
+         <div class="numbers">
+            <h1>OR</h1><input type="tel" placeholder="Enter a Number to call">
+         </div>
+      </div>
+      <div class="video_btn">
+         <button id="btn_start">Start Video Call</button>
+         <button id="btn_end">Get Clinet Video</button>
+         <button id="cut_call">End Call</button>
+      </div>
+    </div>
+
+    <footer><p>Copyright &copy; 2023 All Rights Reserved</p></footer>
+
+
+    <script src="./video.js"></script>
+ </body>
+ </html>
